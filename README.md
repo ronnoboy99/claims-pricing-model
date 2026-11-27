@@ -1,33 +1,12 @@
-# Claims Pricing Model
+# Flick
 
-A general insurance claims pricing model built on the freMTPL2 motor dataset.
+Notes app for Android (Kotlin + Jetpack Compose, min SDK 30).
 
-**Status:** Work in progress — just started.
+Open this folder in Android Studio (File > Open), let Gradle sync, run on your phone.
 
-Built by Aaron Ranjith, a first-year Actuarial Science student at Monash University.
+- Home: grid / list / Flick view, search (full-text), folders, Trash, pull down to create
+- Editor: multi-line text selection, checklists, headings, bullets, numbered, quotes, images, undo/redo
+- Delete: Thanos-snap animation, Undo from the pill
+- Center button: tap = new note, hold and slide to Checklist or Photo, release to pick
 
-## About the project
-
-This project builds a frequency–severity pricing model for motor insurance using the freMTPL2 dataset, which contains about 670,000 policies.
-
-The aim is to estimate a pure premium for each policy by modelling how often claims occur and how large they are when they do, then to present the results in a Power BI dashboard.
-
-## Method
-
-- **Frequency:** Poisson generalised linear model (GLM) for claim counts
-- **Severity:** Gamma GLM for claim amounts
-- **Pure premium:** Frequency × severity
-- **Benchmark:** XGBoost, compared against the GLM results
-
-## Tech stack
-
-- R
-- Python
-- Power BI
-
-## Roadmap
-
-- [ ] **29 Nov 2026** — Download and clean the freMTPL2 data
-- [ ] **1 Dec 2026** — Fit the Poisson GLM for claim frequency
-- [ ] **3 Dec 2026** — Fit the Gamma GLM for severity and combine into a pure premium
-- [ ] **After that** — Compare GLM vs XGBoost and build the Power BI dashboard
+Fonts: Instrument Serif and Inter Tight (OFL).
